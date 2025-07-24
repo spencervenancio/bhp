@@ -1,9 +1,5 @@
 # BennetHypothesisValidation
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
-
 We seek to verify or disprove the Bennet Hypothesis with a data science perspective.
 
 ## Project Organization
