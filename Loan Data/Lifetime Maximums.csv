@@ -1,0 +1,7 @@
+﻿Year_Start,Year_End,Level,Dependency,Aggregate_Max,Subsidized_Cap
+1995,2007,Undergraduate,Dependent,23000,23000
+1995,2007,Undergraduate,Independent,46000,23000
+1995,2007,Graduate,Independent,138500,65500
+2008,2025,Undergraduate,Dependent,31000,23000
+2008,2025,Undergraduate,Independent,57500,23000
+2008,2025,Graduate,Independent,138500,65500
