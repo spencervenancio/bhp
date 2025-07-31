@@ -1,4 +1,20 @@
 site_name: Bennet Hypothesis Validation
-# 
+
 site_author: Spencer Venancio and Jack Perloff
-# 
+
+theme:
+  name: material
+  palette:
+    scheme: slate  # This is the dark mode
+    primary: deep purple
+    accent: lime
+  toggle:
+    icon: material/weather-night
+    name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top

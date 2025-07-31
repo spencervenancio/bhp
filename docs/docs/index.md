@@ -1,4 +1,4 @@
-# BennetHypothesisValidation documentation!
+# BHP documentation!
 
 ## Description
 
