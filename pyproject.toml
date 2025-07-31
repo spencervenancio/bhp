@@ -27,7 +27,8 @@ dependencies = [
     "matplotlib", 
     "scikit-learn", 
     "statsmodels", 
-    "lightgbm"
+    "lightgbm", 
+    "openpyxl" 
 ]
 requires-python = "~=3.10.0"
 
