@@ -1,11 +1,10 @@
-# BennetHypothesisValidation
+# BHP
 
 We seek to verify or disprove the Bennet Hypothesis with a data science perspective.
 
 ## Project Organization
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
