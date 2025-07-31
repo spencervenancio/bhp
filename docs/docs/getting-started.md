@@ -20,9 +20,9 @@ uv 0.8.3 (7e78f54e7 2025-07-24)
 Now that `uv` is installed we can use it to manage our dependencies. Check that you are in the `bennethypothesisvalidation/` directory. Then again in your terminal run 
 
 ```bash
-(base)  % uv venv
-(base)  % source .venv/bin/activate 
-(bhp)   % uv pip install . 
+(base)  % make create_environment
+(base)  % source .venv/bin/activate
+(.venv) (base)  % make requirements
 ```
 
 You should see something like 
