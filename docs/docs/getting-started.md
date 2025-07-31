@@ -6,13 +6,13 @@ Getting started
 To get started, first make sure that you have `uv` installed. In your terminal run:
 
 ```bash
-(base) spencervenancio@Spencers-Air ~ % pip install uv
+(base) % pip install uv
 ```
 
 You can check that you have it installed correctly by running
 
 ```bash
-(base) spencervenancio@Spencers-Air ~ % uv --version 
+(base) % uv --version 
 uv 0.8.3 (7e78f54e7 2025-07-24)
 ``` 
 
@@ -20,9 +20,9 @@ uv 0.8.3 (7e78f54e7 2025-07-24)
 Now that `uv` is installed we can use it to manage our dependencies. Check that you are in the `bennethypothesisvalidation/` directory. Then again in your terminal run 
 
 ```bash
-(base) spencervenancio@Spencers-Air ~ % uv venv
-(base) spencervenancio@Spencers-Air ~ % source .venv/bin/activate 
-(base) spencervenancio@Spencers-Air bennethypothesisvalidation % uv pip install . 
+(base)  % uv venv
+(base)  % source .venv/bin/activate 
+(bhp)   % uv pip install . 
 ```
 
 You should see something like 
@@ -40,17 +40,26 @@ Installed 29 packages in 24ms
 ```
 
 ## Download the data
-The data can be downloaded [here](https://collegescorecard.ed.gov/data). You should download the file titled **Most Recent Institution-Level Data**. 
+The data can be downloaded [here](https://collegescorecard.ed.gov/data). You should download the file titled **All Data Files**. 
 
 You should ensure that your `data/` directory is structructed like
 
 ```
 ├── data
-   ├── external       <- Data from third party sources.
-   ├── interim        <- Intermediate data that has been transformed.
-   ├── processed      <- The final, canonical data sets for modeling.
-   └── raw            <- The original, immutable data dump.
+   ├── interim                <- Intermediate data that has been transformed.
+   ├── processed              <- The final, canonical data sets for modeling.
+   └── raw                    <- The original, immutable data dump.
+      └─ college_scorecard    <- The new data.
 
 ```
+The directory `College_Scorecard_Raw_Data_05192025` should be inside the `data/raw/` folder, and renamed to `college_scorecard`. 
 
-The `Most-Recent-Cohorts-Institution_05192025.csv` should go in to the `data/raw/` directory
+### Building the DataFrame
+Build the `df` needed for analysis by running in your terminal
+
+```bash 
+(bhp) % python -m src.dataset 
+```
+
+Now there is a `data/interim/tuition.csv` file.
+
