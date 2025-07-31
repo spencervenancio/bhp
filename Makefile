@@ -2,7 +2,7 @@
 # GLOBALS                                                                       #
 #################################################################################
 
-PROJECT_NAME = bennethypothesisvalidation
+PROJECT_NAME = bhp
 PYTHON_VERSION = 3.10
 PYTHON_INTERPRETER = python
 
@@ -14,7 +14,7 @@ PYTHON_INTERPRETER = python
 ## Install Python dependencies
 .PHONY: requirements
 requirements:
-	pip install -e .
+	uv pip install -e .
 	
 
 
@@ -38,17 +38,11 @@ format:
 	ruff check --fix
 	ruff format
 
-
-
-
-
-## Set up Python interpreter environment
+### Set up Python interpreter environment with uv
 .PHONY: create_environment
 create_environment:
-	
-	conda create --name $(PROJECT_NAME) python=$(PYTHON_VERSION) -y
-	
-	@echo ">>> conda env created. Activate with:\nconda activate $(PROJECT_NAME)"
+	uv venv .venv --python=$(PYTHON_VERSION)
+	@echo ">>> uv env created. Activate with:\nsource .venv/bin/activate"
 	
 
 
