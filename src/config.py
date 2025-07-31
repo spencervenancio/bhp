@@ -15,7 +15,7 @@ RAW_DATA_DIR = DATA_DIR / "raw"
 INTERIM_DATA_DIR = DATA_DIR / "interim"
 PROCESSED_DATA_DIR = DATA_DIR / "processed"
 EXTERNAL_DATA_DIR = DATA_DIR / "external"
-COLLEGE_SCORECARD = RAW_DATA_DIR / 'college_scorecard'
+COLLEGE_SCORECARD = RAW_DATA_DIR / "college_scorecard"
 
 MODELS_DIR = PROJ_ROOT / "models"
 
@@ -24,13 +24,11 @@ FIGURES_DIR = REPORTS_DIR / "figures"
 
 # Standard Column Names
 STD_COLS = {
-    "UNITID" : "id",
-    "INSTNM" : "institution", 
+    "UNITID": "id",
+    "INSTNM": "institution",
     "TUITIONFEE_IN": "tuition_in",
-    "TUITIONFEE_OUT" : "tuition_out" 
-    
+    "TUITIONFEE_OUT": "tuition_out",
 }
-
 
 
 # If tqdm is installed, configure loguru with tqdm.write
