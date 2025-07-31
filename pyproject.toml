@@ -27,6 +27,8 @@ dependencies = [
 ]
 requires-python = "~=3.10.0"
 
+[project.optional-dependencies]
+notebook = ["jupyter", "ipykernel"]
 
 [tool.ruff]
 line-length = 99
