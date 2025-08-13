@@ -1,0 +1,5 @@
+year,loan_type,num_loans,total_amount
+2006,Subsidized,16.8,3300
+2007,Subsidized,20.4,3700
+2006,Unsubsidized,13.6,3660
+2007,Unsubsidized,14.7,3770

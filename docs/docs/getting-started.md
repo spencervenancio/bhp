@@ -1,7 +1,7 @@
 Getting started
 ===============
 
-## Install `uv`
+## Install `uv` for MacOS
 
 To get started, first make sure that you have `uv` installed. In your terminal run:
 
@@ -62,4 +62,34 @@ Build the `df` needed for analysis by running in your terminal
 ```
 
 Now there is a `data/interim/tuition.csv` file.
+
+
+## Windows Setup
+
+1. **Create and activate a virtual environment**  
+   From the repository root:
+
+   ```powershell
+   uv venv .venv
+   .\.venv\Scripts\activate
+   ```
+
+2. **Install Dependencies**
+   Run:
+
+   ```powershell
+   uv sync
+   ```
+
+3. **Download Data**
+   Download All Data Files from the link above. Unzip, the rename to college_scorecard and move it data\raw
+
+4. **Build Dataset**
+   Run:
+
+   ```powershell
+   uv run python -m src.dataset
+   ```
+
+   This will create a csv file called tuition.csv in data\interim.
 
